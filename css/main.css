@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  background-color: #e6f8f8;
+  min-height: 100vh;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+
+.navbar{
+    background-color: #fcfcfc;
+}
+
+.uni-text {
+  color: #234c7f;
+}
+
+.share-text {
+  color: #811316;
+}
+
+.nav-item{
+    font-weight: bold;
+}
+.nav-link:hover {
+  color: red;
+}
+.unibox{
+    margin-top: 170px;
+}
+.bannerbox{
+    margin-top: 160px;
+}
+
+.subject-btn {
+  display: block;
+  min-width: 140px; /* tất cả nút có chiều rộng tối thiểu bằng nhau */
+  padding: 10px;
+  border: 1px solid #0d6efd;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0d6efd;
+  background: #fff;
+  transition: all 0.2s ease;
+  white-space: nowrap; /* tránh xuống dòng */
+}
+.subject-btn:hover {
+  background: #0d6efd;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+
+}
+
+.mentor-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mentor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.mentor-card h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.mentor-card p {
+  margin: 0;
+  color: #555;
+}
+
+.mentor-card span {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0d6efd;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.btn-cta:hover {
+  background: #0b5ed7;
+  transform: scale(1.05);
+}
+
+.content-sub{
+    margin-top: 30px;
+}
+
+.comment-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.comment-box .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment-box input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.comment-list .comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.comment .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment-body {
+  background: #f0f2f5;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.comment-content {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.comment-content .author {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* khoảng cách giữa các phần tử */
+  font-size: 12px;
+  color: #65676b;
+}
+
+.comment-actions span {
+  cursor: pointer;
+  white-space: nowrap; /* tránh xuống dòng */
+}
+
+
+.comment-actions span:hover {
+  text-decoration: underline;
+}
+
+.reply-box {
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.reply {
+  display: flex;
+  gap: 8px;
+}
+
+.reply .avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.reply-body {
+  background: #f0f2f5;
+  padding: 6px 10px;
+  border-radius: 12px;
+  max-width: 550px;
+}
+.btn-mentor{
+    margin-top: 55px;
+}
+
+#nha-chung{
+    margin-top: 70px;
+}
+
+.comment img {
+  width: 40px;
+  height: 40px;
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #65676b;
+}
+
+.comment-actions span {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.comment-actions span:hover {
+  text-decoration: underline;
+}
+#nha-chung p.text-muted {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.badge-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  filter: grayscale(100%);
+  transition: transform 0.2s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.badge-circle.achieved {
+  filter: grayscale(0%);
+  background-color: #fff8e7;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.badge-circle:hover {
+  transform: scale(1.1);
+}
+.progress {
+  background-color: #e9ecef;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  transition: width 1s ease-in-out; /* Animation khi load */
+  font-size: 14px;
+}
+

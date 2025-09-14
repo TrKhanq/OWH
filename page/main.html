@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniShare</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-primary" href="#">
+            <img src="../asset/logo/logo_news.jpg" alt="Logo" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto d-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="#kho-tailieu">Kho tài liệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mentor">Hệ thống mentor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nha-chung">Nhà chung sinh viên</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tro-ly-ai">Trợ lý AI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gamification">Gamification</a>
+              </li>
+            </ul>
+            <button class="btn btn-success ms-3">Start now</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <!-- Left -->
+          <div class="unibox col-md-6">
+            <h1 class="display-4 fw-bold">
+              <span class="uni-text">Uni</span
+              ><span class="share-text">Share</span>
+            </h1>
+            <p class="lead mb-4">Kết Nối Tri Thức - Vững Bước Tương Lai</p>
+            <button class="btn btn-dark btn-lg">Bức Phá Ngay</button>
+          </div>
+          <!-- Right -->
+          <div class="bannerbox col-md-6 text-center">
+            <img
+              src="../asset/banner/banner_1.png"
+              alt="UniShare Banner"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kho tài liệu -->
+   <section id="kho-tailieu" class="py-5">
+  <div class="container">
+    <h2 class="content-sub fw-bold text-center mb-3">📚 Kho Tài Liệu</h2>
+
+    <!-- Thanh tìm kiếm -->
+    <div class="d-flex justify-content-center mb-4">
+      <input 
+        type="text" 
+        id="searchInput" 
+        class="form-control w-50" 
+        placeholder="🔍 Tìm tài liệu..." 
+      />
+    </div>
+
+    <!-- Nơi render danh sách môn -->
+    <div id="subjectContainer" class="row g-3"></div>
+  </div>
+</section>
+
+
+
+    <!-- Hệ thống mentor -->
+    <section id="mentor" class="py-5">
+  <div class="container text-center">
+    <h2 class="content-mentor fw-bold mb-4">👨‍🏫 Hệ Thống Mentor</h2>
+    <p class="lead mb-5">
+      Chúng tôi cung cấp hệ thống mentor 1-1 giúp bạn học tập hiệu quả hơn.
+      Mentor sẽ hướng dẫn, giải đáp thắc mắc, review code và hỗ trợ bạn trong suốt quá trình học.
+    </p>
+
+    <div class="mentor-grid">
+      <!-- Mentor 1 -->
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=1" alt="Mentor 1">
+        <h4>Nguyễn Văn A</h4>
+        <p>Frontend Mentor</p>
+        <span>5 năm kinh nghiệm</span>
+      </div>
+
+      <!-- Mentor 2 -->
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=2" alt="Mentor 2">
+        <h4>Trần Thị B</h4>
+        <p>Backend Mentor</p>
+        <span>7 năm kinh nghiệm</span>
+      </div>
+
+      <!-- Mentor 3 -->
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=3" alt="Mentor 3">
+        <h4>Lê Văn C</h4>
+        <p>Fullstack Mentor</p>
+        <span>4 năm kinh nghiệm</span>
+      </div>
+
+      <!-- Mentor 4 -->
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=4" alt="Mentor 4">
+        <h4>Phạm Thị D</h4>
+        <p>UI/UX Mentor</p>
+        <span>6 năm kinh nghiệm</span>
+      </div>
+
+      <!-- Mentor 5 -->
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=5" alt="Mentor 5">
+        <h4>Hoàng Văn E</h4>
+        <p>Data Science Mentor</p>
+        <span>8 năm kinh nghiệm</span>
+      </div>
+
+      <!-- Mentor 6 -->
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=6" alt="Mentor 6">
+        <h4>Đặng Thị F</h4>
+        <p>AI Mentor</p>
+        <span>5 năm kinh nghiệm</span>
+      </div>
+
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=3" alt="Mentor 3">
+        <h4>Lê Văn C</h4>
+        <p>Fullstack Mentor</p>
+        <span>4 năm kinh nghiệm</span>
+      </div>
+
+      <!-- Mentor 4 -->
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=4" alt="Mentor 4">
+        <h4>Phạm Thị D</h4>
+        <p>UI/UX Mentor</p>
+        <span>6 năm kinh nghiệm</span>
+      </div>
+
+      <!-- Mentor 5 -->
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=5" alt="Mentor 5">
+        <h4>Hoàng Văn E</h4>
+        <p>Data Science Mentor</p>
+        <span>8 năm kinh nghiệm</span>
+      </div>
+
+      <!-- Mentor 6 -->
+      <div class="mentor-card">
+        <img src="https://i.pravatar.cc/150?img=6" alt="Mentor 6">
+        <h4>Đặng Thị F</h4>
+        <p>AI Mentor</p>
+        <span>5 năm kinh nghiệm</span>
+      </div>
+    </div>
+
+    
+
+    <a href="../page/regis-mentor.html" class="btn-mentor btn-cta">Đăng ký học với mentor</a>
+  </div>
+</section>
+
+
+
+
+    <!-- Nhà chung sinh viên -->
+    <section id="nha-chung" class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">🏠 Nhà Chung Sinh Viên - Hỏi Đáp</h2>
+    <p class="text-center text-muted mb-4">
+      Đây là nơi sinh viên cùng nhau thảo luận, hỏi đáp về bài tập, chia sẻ kinh nghiệm học tập, 
+      và hỗ trợ lẫn nhau trong quá trình học. Hãy thoải mái đặt câu hỏi và trả lời để tạo nên một cộng đồng học tập tích cực!
+    </p>
+
+    <!-- Bình luận 1 -->
+    <div class="comment mb-3">
+      <div class="d-flex">
+        <img src="https://i.pravatar.cc/40?img=1" class="rounded-circle me-2" />
+        <div>
+          <div class="bg-light p-2 rounded">
+            <strong>Nguyễn Văn A</strong>  
+            <p class="mb-0">Ai có tài liệu môn Cấu trúc dữ liệu không cho mình xin với 🙏</p>
+          </div>
+          <div class="comment-actions mt-1">
+            <span class="like">👍 Thích</span> · 
+            <span class="reply">💬 Trả lời</span> · 
+            <span class="time">5 phút trước</span>
+          </div>
+
+          <!-- Reply 1 -->
+          <div class="reply mt-2 ms-5">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/40?img=2" class="rounded-circle me-2" />
+              <div>
+                <div class="bg-light p-2 rounded">
+                  <strong>Trần Thị B</strong>  
+                  <p class="mb-0">Mình có nè, để mình gửi link Google Drive cho bạn.</p>
+                </div>
+                <div class="comment-actions mt-1">
+                  <span class="like">👍 Thích</span> · 
+                  <span class="reply">💬 Trả lời</span> · 
+                  <span class="time">3 phút trước</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reply 2 -->
+          <div class="reply mt-2 ms-5">
+            <div class="d-flex">
+              <img src="https://i.pravatar.cc/40?img=3" class="rounded-circle me-2" />
+              <div>
+                <div class="bg-light p-2 rounded">
+                  <strong>Lê Văn C</strong>  
+                  <p class="mb-0">Mình cũng cần luôn, cảm ơn bạn B nha ❤️</p>
+                </div>
+                <div class="comment-actions mt-1">
+                  <span class="like">👍 Thích</span> · 
+                  <span class="reply">💬 Trả lời</span> · 
+                  <span class="time">1 phút trước</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bình luận 2 -->
+    <div class="comment mb-3">
+      <div class="d-flex">
+        <img src="https://i.pravatar.cc/40?img=4" class="rounded-circle me-2" />
+        <div>
+          <div class="bg-light p-2 rounded">
+            <strong>Phạm Thảo</strong>  
+            <p class="mb-0">Có ai giải thích giúp mình thuật toán Dijkstra không ạ? Mình chưa hiểu lắm 😢</p>
+          </div>
+          <div class="comment-actions mt-1">
+            <span class="like">👍 Thích</span> · 
+            <span class="reply">💬 Trả lời</span> · 
+            <span class="time">10 phút trước</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bình luận 3 -->
+    <div class="comment mb-3">
+      <div class="d-flex">
+        <img src="https://i.pravatar.cc/40?img=5" class="rounded-circle me-2" />
+        <div>
+          <div class="bg-light p-2 rounded">
+            <strong>Hoàng Minh</strong>  
+            <p class="mb-0">Mọi người có group nào ôn thi cuối kỳ môn Lập trình C không? Cho mình join với!</p>
+          </div>
+          <div class="comment-actions mt-1">
+            <span class="like">👍 Thích</span> · 
+            <span class="reply">💬 Trả lời</span> · 
+            <span class="time">15 phút trước</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comment mb-3">
+      <div class="d-flex">
+        <img src="https://i.pravatar.cc/40?img=5" class="rounded-circle me-2" />
+        <div>
+          <div class="bg-light p-2 rounded">
+            <strong>Hoàng Minh</strong>  
+            <p class="mb-0">Mọi người có group nào ôn thi cuối kỳ môn Lập trình C không? Cho mình join với!</p>
+          </div>
+          <div class="comment-actions mt-1">
+            <span class="like">👍 Thích</span> · 
+            <span class="reply">💬 Trả lời</span> · 
+            <span class="time">15 phút trước</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comment mb-3">
+      <div class="d-flex">
+        <img src="https://i.pravatar.cc/40?img=5" class="rounded-circle me-2" />
+        <div>
+          <div class="bg-light p-2 rounded">
+            <strong>Hoàng Minh</strong>  
+            <p class="mb-0">Mọi người có group nào ôn thi cuối kỳ môn Lập trình C không? Cho mình join với!</p>
+          </div>
+          <div class="comment-actions mt-1">
+            <span class="like">👍 Thích</span> · 
+            <span class="reply">💬 Trả lời</span> · 
+            <span class="time">15 phút trước</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Trợ lý AI -->
+    <section id="tro-ly-ai" class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-3">🤖 Trợ Lý AI</h2>
+    <p class="text-center mb-4" style="font-size: 20px;">
+      Đây là nơi bạn có thể nhập câu hỏi hoặc chọn một gợi ý có sẵn để trợ lý AI hỗ trợ bạn.
+      Bạn có thể dùng nó để giải thích kiến thức, tạo dàn ý học tập hoặc viết code mẫu nhanh chóng.
+    </p>
+
+    <!-- Prompt gợi ý -->
+    <div class="d-flex flex-wrap gap-2 justify-content-center mb-3">
+      <button class="btn btn-outline-primary prompt-btn">Giải thích thuật toán Dijkstra</button>
+      <button class="btn btn-outline-primary prompt-btn">Tạo dàn ý ôn thi Cấu trúc dữ liệu</button>
+      <button class="btn btn-outline-primary prompt-btn">Lập trình C: ví dụ về Linked List</button>
+      <button class="btn btn-outline-primary prompt-btn">Gợi ý cách ôn thi cuối kỳ hiệu quả</button>
+
+      <button class="btn btn-outline-primary prompt-btn">So sánh React, Vue và Angular</button>
+      <button class="btn btn-outline-primary prompt-btn">Giải thích OOP trong Java</button>
+      <button class="btn btn-outline-primary prompt-btn">Viết SQL để lấy 10 sản phẩm bán chạy nhất</button>
+      <button class="btn btn-outline-primary prompt-btn">Hướng dẫn học Machine Learning cho người mới</button>
+    </div>
+
+    <!-- Khung chat -->
+    <div class="bg-light p-3 rounded shadow-sm">
+      <div id="chat-box" class="mb-3" style="max-height: 250px; overflow-y: auto;">
+        <!-- Tin nhắn sẽ được thêm ở đây -->
+      </div>
+      <div class="d-flex">
+        <input type="text" id="chat-input" class="form-control me-2" placeholder="Nhập câu hỏi cho AI..." />
+        <button class="btn btn-primary" id="send-btn">Gửi</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Gamification -->
+    <section id="gamification" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">🏆 Gamification</h2>
+    <p class="mb-4" style="font-size: 20px;">
+      Thu thập thành tích khi bạn hoàn thành bài học, tham gia sự kiện hoặc giúp đỡ cộng đồng.
+      Mỗi thành tích sẽ giúp bạn tăng cấp độ và mở khóa phần thưởng đặc biệt.
+    </p>
+
+    <!-- Thanh tiến độ -->
+<div class="progress mb-4" style="height: 25px;">
+  <div id="progress-bar" class="progress-bar bg-success fw-bold" role="progressbar" style="width: 0%;">
+    0%
+  </div>
+</div>
+
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <!-- 30 thành tích - Demo 3 cái đạt được -->
+      <div class="badge-circle achieved" data-bs-toggle="tooltip" title="Hoàn thành 10 bài học 🎯">🎯</div>
+      <div class="badge-circle achieved" data-bs-toggle="tooltip" title="Đọc 50 tài liệu 📚">📚</div>
+      <div class="badge-circle achieved" data-bs-toggle="tooltip" title="Viết 5 bài chia sẻ 💻">💻</div>
+
+      <!-- 27 thành tích chưa đạt -->
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Hoàn thành 20 bài học 🔥">🔥</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Tham gia 3 sự kiện 🏅">🏅</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Hoàn thành thử thách 7 ngày ⚡">⚡</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Đạt cấp độ 5 🚀">🚀</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Đóng góp tài liệu 🎨">🎨</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Nghe podcast 10 lần 🎧">🎧</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Viết 10 ghi chú 📝">📝</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Giải câu đố AI 🧠">🧠</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Tham gia nhóm học tập 🌍">🌍</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Đạt điểm cao bài quiz 🏆">🏆</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Giải câu đố ghép hình 🧩">🧩</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Chơi minigame 🎮">🎮</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Đóng góp ý kiến 📈">📈</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Gửi gợi ý tính năng 💡">💡</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Tạo playlist học tập 🎵">🎵</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Mở khóa bí mật 🔑">🔑</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Đạt 1000 điểm ⭐">⭐</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Giúp đỡ 5 bạn khác 🤝">🤝</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Học liên tục 7 ngày 📆">📆</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Hoàn thành dự án nhóm 👥">👥</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Đóng góp code trên GitHub 💾">💾</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Đạt 100% bài tập 🎯">✅</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Hoàn thành khóa học đầu tiên 🏁">🏁</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Nhận đánh giá tích cực 👍">👍</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Trả lời 10 câu hỏi 🗨️">🗨️</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Hoàn thành 5 bài quiz 🎲">🎲</div>
+      <div class="badge-circle" data-bs-toggle="tooltip" title="Đạt danh hiệu 'Chuyên Gia' 👑">👑</div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Bootstrap JS -->
+    <!-- Bootstrap JS (quan trọng: bundle có Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

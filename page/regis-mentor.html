@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký Mentor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="register-box">
+      <h2 class="text-center mb-4">👨‍🏫 Đăng ký học với Mentor</h2>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Họ và tên</label>
+          <input type="text" class="form-control" placeholder="Nhập họ tên" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="Nhập email" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Số điện thoại</label>
+          <input type="tel" class="form-control" placeholder="Nhập số điện thoại" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Lĩnh vực quan tâm</label>
+          <select class="form-select">
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>Fullstack</option>
+            <option>Data Science</option>
+            <option>AI/ML</option>
+            <option>UI/UX</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Chọn Mentor</label>
+          <select id="mentorSelect" class="form-select"></select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Lịch học mong muốn</label>
+          <input type="datetime-local" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">📩 Gửi đăng ký</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body text-center p-4">
+        <h5>🎉 Đăng ký thành công!</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/regis-mentor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
